@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+  <script>
+    $(function() {
+      $.scrollify({
+        section : ".section",
+      });
+    });
+  </script>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>new Portfolio</title>
+</head>
+
+<!-- Home -->
+
+<body id="home" class="scrollspy">
+  <header class="main-header">
+    <div class="primary-overlay">
+      <div class="navbar-fixed">
+        <nav class="black transparent">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#home" class="brand-logo white-text">Kiha Moore</a>
+              <a href="#mobile-links"  class="sidenav-trigger" data-target="mobile-links" >
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+            
+                  <li><a href="#home" class="white-text">Home</a></li>
+                  <li><a href="#about" class="white-text">About</a></li>
+                  <li><a href="#portfolio" class="white-text">Portfolio</a></li>
+                  <li><a href="#contact" class="white-text">Contact</a></li>
+                  
+              </ul>
+              <ul class="sidenav" id="mobile-links">
+                  
+                  <li ><a href="#home" class= " blue-text">Home</a></li>
+                  <li ><a href="#about" class= " blue-text">About</a></li>
+                   <li ><a href="#portfolio" class= " blue-text">Portfolio</a></li>
+                   <li ><a href="#contact" class= " blue-text">Contact</a></li>
+             </ul>
+         </div>
+      </nav>
+      </div>
+      
+      <ul class="sidenav" id="mobile-links">
+        <h4 class="blue-grey-text darken-3 center">Kiha Moore</h4>
+        <li>
+          <a class="divider"></a>
+        </li>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>  
+
+
+      <!-- Showcase -->
+      <div class="showcase container">
+        <div class="row class="col s12 main-text”>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            <div id='title'>
+              <span>
+                  Professional photographer
+              </span>
+              <br>
+              <span>
+                  UI/UX web developer
+              </span>
+            </h4>
+              <p class="flow-text"></p>
+              <br>
+              <br>
+              <br>
+              <!-- <a href="#about" class="btn btn-large waves-effect waves-blue ">Hello!</a> -->
+              <a href="#about" class="white-text">
+                <i class="material-icons medium scroll-icon">arrow_drop_down_circle</i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section section-about white lighten-3 center scrollspy">
+    <div class="container">
+      <h3></h3>
+      <p class="flow-text"></p>
+      <div class="row">
+        <div class="col s12 m6">
+          <img src="./images/Kiha.png" alt="" class="responsive-img ">
+        </div>
+        <div class="col s12 m5 offset-m1 ">
+          <br>
+          <ul class="collection with-header z-depth-5 blue">
+            <li class="collection-header">
+              <h5>Skills</h5>
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> HTML
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> CSS
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i>Materialize
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> javascript
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> Node.js
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> React
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i> Redux
+            </li>
+            <li class="collection-item">
+              <i class="material-icons left blue-text">check</i>MongoDB
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Section: Slider -->
+
+<section class="slider">
+  
+    <ul class="slides">
+      <li>
+        <img src="./images/flower.jpg" alt="">
+        <div class="caption left-align">
+          <h2>Design</h2>
+          <h5>I care about the details</h5>
+          <h5></h5>
+        </div>
+     </li>
+     <li>
+        <img src="./images/pc.jpeg" alt="">
+        <div class="caption center-align">
+          <h2>Slef motivated</h2>
+          <h5 class="textblack">I always curious to learn about new technologies</h5>
+        </div>
+     </li>
+     <li>
+         <img src="./images/green.jpg" alt="">
+         <div class="caption right-align">
+           <h1>Color</h1>
+           <h5 class="white-text hide-on-small-only">I admire the colors</h5>
+         </div>
+      </li>
+      
+      <li>
+          <img src="./images/town.jpg" alt="">
+          <div class="caption center-align">
+            <h2>Multicultural experience</h2>
+            <h5 class="text-black">I lived in 5 countries and traveled around 30 countries</h5>
+          </div>
+       </li>
+       
+    </ul>
+   
+ </section>
+ 
+ 
+ 
+ 
+ 
+   
+ 
+
+  <!-- section Portfolio  -->
+
+  <section id="portfolio"class="section section-main  black">
+   
+    <div class="container">
+      <!-- Row1 -->
+      <h1 class="text-white profile-text">Portfolio</h1>
+      <div class="row row-1">
+        <div class="title center">
+          <h1>Portfolio</h1>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leica.jpg" alt="">
+              <span class="card-title">Crystal Collecting Game</span>
+              <a href="#christal-game-modal" class="btn-floating halfway-fab waves-effect waves-light  modal-trigger">
+                <i class="material-icons">zoom_in</i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leica.jpg" alt="">
+              <span class="card-title">Trivia</span>
+              <a href="#trivia" class="btn-floating halfway-fab waves-effect waves-light  modal-trigger">
+                <i class="material-icons">zoom_in</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leica.jpg" alt="">
+              <span class="card-title">Giphy</span>
+              <a href="#giphy" class="btn-floating halfway-fab waves-effect waves-light  modal-trigger">
+                <i class="material-icons">zoom_in</i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leica.jpg" alt="">
+              <span class="card-title">Purrfect cat finder </span>
+              <a href="#cat" class="btn-floating halfway-fab waves-effect waves-light  modal-trigger">
+                <i class="material-icons">zoom_in</i>
+              </a>
+            </div>
+          </div>
+        </div>
+       
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="./images/leica.jpg" alt="">
+              <span class="card-title">Sweet Guess game</span>
+              <a href="#sweet" class="btn-floating halfway-fab waves-effect waves-light  modal-trigger">
+                <i class="material-icons">zoom_in</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modals -->
+
+  <div id="christal-game-modal" class="modal">
+    <div class="modal-content">  
+        <div>
+        <video class="responsive-video" controls>
+          <source src="./images/Crystal.mov" type="video/mp4">
+        </video>
+      </div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating">
+          <i class="small material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a href="https://kihamoore.github.io/unit-4-game/" class="btn-floating blue"><i class="material-icons">language</i></a></li>
+          <li><a href="https://github.com/KihaMoore/unit-4-game" class="btn-floating blue"><i class="material-icons">code</i></a></li>
+        </ul>
+      </div>
+
+    </div>
+</div>
+<div id="trivia" class="modal">
+  <div class="modal-content">  
+    <div>
+      <video class="responsive-video" controls>
+        <source src="./images/Trivia.mov" type="video/mp4">
+      </video>
+      <div class="fixed-action-btn">
+        <a class="btn-floating">
+          <i class="small material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a href="https://kihamoore.github.io/unit-4-game/" class="btn-floating blue"><i class="material-icons">language</i></a></li>
+            <li><a href="https://github.com/KihaMoore/unit-4-game" class="btn-floating blue"><i class="material-icons">code</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="giphy" class="modal">
+  <div class="modal-content">  
+    <div>
+      <video class="responsive-video" controls>
+        <source src="./images/Gify.mov" type="video/mp4">
+      </video>
+      <div class="fixed-action-btn">
+        <a class="btn-floating">
+          <i class=" material-icons blue">menu</i>
+        </a>
+        <ul>
+            <li><a href="https://kihamoore.github.io/unit-4-game/" class="btn-floating blue"><i class="material-icons">language</i></a></li>
+            <li><a href="https://github.com/KihaMoore/unit-4-game" class="btn-floating blue"><i class="material-icons">code</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="cat" class="modal">
+  <div class="modal-content">  
+    <div>
+      <video class="responsive-video" controls>
+        <source src="./images/cat.mov" type="video/mp4">
+      </video>
+      <div class="fixed-action-btn">
+        <a class="btn-floating">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a href="https://kihamoore.github.io/unit-4-game/" class="btn-floating blue"><i class="material-icons">language</i></a></li>
+            <li><a href="https://github.com/KihaMoore/unit-4-game" class="btn-floating blue"><i class="material-icons">code</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="sweet" class="modal">
+  <div class="modal-content">  
+    <div>
+      <video class="responsive-video" controls>
+        <source src="./images/SweetGuess.mov" type="video/mp4">
+      </video>
+      <div class="fixed-action-btn">
+        <a class="btn-floating">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul>
+            <li><a href="https://kihamoore.github.io/unit-4-game/" class="btn-floating blue"><i class="material-icons">language</i></a></li>
+            <li><a href="https://github.com/KihaMoore/unit-4-game" class="btn-floating blue"><i class="material-icons">code</i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <!-- Section: Contact -->
+  <section id="contact" class="section section-contact center scrollspy">
+    <div id="googlemap"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m6">
+          <div class="card-panel z-depth-5">
+            <h4>Contact Me!</h4>
+            <div class="input-field">
+              <input type="text" id="name" placeholder="Name">
+              <label for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" placeholder="Email">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="phone" placeholder="Phone Number">
+              <label for="phone">Phone</label>
+            </div>
+            <div class="input-field">
+              <textarea class="materialize-textarea" id="message" placeholder="Message"></textarea>
+              <label for="message">Message</label>
+            </div>
+            <input type="submit" value="Submit" class="btn blue-grey">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- footer -->
+
+  <footer class="page-footer #ffcdd2 black text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Location</h5>
+          <p>Kiha Moore</p>
+          <p>Atlanta GA</p>
+          <p>kija-526@hotmail.co.jp</p>
+        </div>
+        <!-- <div class="col l4 offset-12 s12 right text-white">
+            <ul >
+            <li>
+              <a href="#home text-white">Home</a>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    </div>
+    <div class="footer-copyright center">
+      <div class="container">
+        @2019 Copy right
+
+      </div>
+    </div>
+  </footer>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcegViIJL3uE_RhyIAm04VDS3Tb2Y6DuQ&callBack"></script>
+  <script>
+  
+    $(document).ready(function () {
+      // Init Sidenav
+      $('.button-collapse').sideNav();
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
+
+      $('.modal').modal();
+
+      $('.slider').slider({
+        indicators: false,
+        height: 500,
+        transition: 1000,
+        interval: 3000
+      })
+
+      // ScrollFire
+      const options = [
+        {
+          selector: '.main-text', offset: 0, callback: function (el) {
+            Materialize.fadeInImage($(el));
+          }
+        },
+        {
+          selector: '.navbar-fixed', offset: 1500, callback: function () {
+            $('nav').removeClass('transparent');
+            $('nav').addClass('blue-grey darken-3');
+          }
+        }
+      ];
+
+      Materialize.scrollFire(options);
+
+      const position = [33.753746, -84.386330];
+      const centerPosition = [33.753746, -84.386330];
+
+      function showGoogleMaps() {
+        // Map positions
+        const latLng = new google.maps.LatLng(position[0], position[1]);
+        const centerLatLng = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
+
+        // Map options
+        const mapOptions = {
+          zoom: 12,
+          streetViewControl: false,
+          scaleControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          center: centerLatLng
+        }
+
+        // Create map
+        map = new google.maps.Map(document.getElementById('googlemap'), mapOptions);
+
+        // Show Marker
+        marker = new google.maps.Marker({
+          position: latLng,
+          map: map,
+          draggable: false,
+          animation: google.maps.Animation.DROP
+        });
+      }
+
+      // Maps event
+      google.maps.event.addDomListener(window, 'load', showGoogleMaps);
+
+    });
+  </script>
+
+</body>
+
+
+</html>
